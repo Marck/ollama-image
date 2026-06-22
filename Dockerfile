@@ -1,4 +1,4 @@
-FROM docker.io/ollama/ollama:0.30.7
+FROM docker.io/ollama/ollama:0.30.8
 
 RUN nohup bash -c "ollama serve &" && sleep 20 && \
         ollama pull llama3.2:1b && \
